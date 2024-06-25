@@ -4,42 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <div class="container">
 
+        <!--Inicio de la Secccion 1-->
         <div class="info">
             <img src="img/Bolsa-de-rupias.jpg" alt="">
             <h1>Xero Bank Loans</h1>
             <p>We are the most trusted bank to give loans for home, cars and others to fulfill your dreams</p>
         </div>
+        <!--Fin de la Seccion 1-->
 
+
+        <!--Inicio de la Secccion 2-->
         <form class="form">
-            <h2>Just some more</h2>
+            <h1>Just some more</h1>
 
             <p>Carefully read and fill up all the inputs with your original information.</p>
 
             <div class="inputs">
                 <input type="cantidad" class="box" placeholder="Amount">
 
-                <select name="" id="">
-                    <option value="">Reason</option>
-                </select>
+                <div class="select-category">
+                    <select name="category" id="select-category">
+                        <option value="">Reason</option>
+                    </select>
+                    <div class="icon-select">
+                        <img src="img/flecha-select.png" alt="">
+                    </div>
+                </div>
+
 
                 <p>Have account in this bank </p>
                 <div class="opciones">
-                    <input type="radio" name="opcion">Yes
-                    <input type="radio" name="opcion">No
+                    <input type="radio" name="opcion" id="yes">
+                    <label for="yes"><span class="radio-button"></span>Yes</label>
+                    <input type="radio" name="opcion" id="no">
+                    <label for="no"><span class="radio-button"></span>No</label>
                 </div>
-
-                <button><img src="img/izquierda.svg" alt="">Back</button>
-                <button><img src="img/derecha.svg" alt="">Next</button>
-
             </div>
 
-            
+            <button class="button-izq"><img src="img/izquierda.svg" alt=""> Back</button>
+            <button class="der">Next<img src="img/derecha.svg" alt=""></button>
+
         </form>
-       
+        <!--Fin de la Seccion 2-->
+
     </div>
 </body>
 </html>
