@@ -23,6 +23,8 @@ body{
     margin-bottom: 90px;
 }
 
+
+/*Inicio del diseño de la Seccion 1*/
 .info{
     display: flex;
     flex-direction: column;
@@ -58,7 +60,10 @@ body{
     width: 130%;
     
 }
+/*Fin del diseño de la Seccion 1*/
 
+
+/*Inicio del diseño de la Seccion 2*/
 .form{
     background-color: #fefeff;
     padding: 70px 100px;
@@ -78,12 +83,12 @@ body{
     margin-bottom: 40px;
 }
 
-.form .inputs{
+.form .sector-1{
     display: flex;
     flex-direction: column;
 }
 
-.form .inputs input{
+.form .sector-1 input{
     border: none;
     background-color: #f0f1f0;
     border-radius: 8px;
@@ -91,9 +96,10 @@ body{
     font-family: 'Poppins';
     font-size: 25px;
     margin-bottom: 20px;
+    outline: none;
 }
 
-.form .inputs input::placeholder{
+.form .sector-1 input::placeholder{
     color: var(--font-color);
 }
 
@@ -110,6 +116,7 @@ body{
     cursor: pointer;
 }
 
+
 .icon-select{
     position: absolute;
     pointer-events: none;
@@ -122,20 +129,22 @@ body{
 }
 
 
-.inputs p{
+.sector-1 p{
     font-family: 'Poppins';
     font-size: 20px;
     color: var(--font-color);
     margin-bottom: 20px;
+    margin-left: 20px;
 }
 
 .opciones{
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
+    margin-left: 20px;
 }
 
-.inputs .opciones input{
+.sector-1 .opciones input{
     display: none;
 }
 
@@ -175,13 +184,17 @@ input:checked + label .radio-button::after{
     opacity: 1;
 }
 
-button{
+.botones{
+    display: flex;
+    flex-direction: row;
+}
+
+.botones button{
     background-color: var(--color-bt);
-    font-family: 'Fredoka';
-    font-weight: 600;
     border: none;
+    height: 70px;
+    width: 150px;
     border-radius: 10px;
-    color: white;
     padding: 10px 10px;
     padding-right: 30px;
     padding-left: 30px;
@@ -192,16 +205,39 @@ button{
     cursor: pointer;
 }
 
+.botones button h2{
+    font-family: 'Fredoka';
+    font-weight: 600;
+    font-size: 30px;
+    color: white;
+}
+
 button:hover{
     background-color: #A3E4D7;
 }
 
 button img{
-    width: 40px;
-    transform: translate(10%, 20%);
-    text-align: center;
+    width: 35px;
 }
 
-.form .button-izq{
+.botones .button-izq{
     margin-right: 20px;
 }
+
+.botones .button-izq img{
+    transform: translate(-100%, 30%);
+}
+
+.botones .button-izq h2{
+    transform: translate(20%, -165%);
+}
+
+.botones .button-der img{
+    transform: translate(100%, -210%);
+}
+
+.botones .button-der h2{
+    transform: translate(-20%, -50%);
+}
+
+/*Fin del diseño de la Seccion 2*/
