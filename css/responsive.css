@@ -1,3 +1,132 @@
+/*RESPONSIVE 1024PX*/
+@media(max-width: 1024px){
+    .container{
+        width: 300px;
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-bottom: 90px;
+    }
+
+    /*Inicio del diseño de la Seccion 1*/
+    .info{
+        width: 150px;
+        padding-top: 200px;
+        padding-bottom: 60px;
+    }
+
+    .info img{
+        height: 200px;
+    }
+
+    .info h1{
+        font-size: 25px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .info p{
+        font-size: 15px;
+        width: 200%;
+    }
+    /*Fin del diseño de la Seccion 1*/
+
+
+    /*Inicio del diseño de la Seccion 2*/
+    .form{
+        width: 380px;
+        padding-left: 80px;
+    }
+
+    .form h1{
+        font-size: 28px;
+    }
+
+}
+
+
+/*RESPONSIVE 768PX*/
+@media(max-width: 768px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 60px;
+        width: 300px;
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-bottom: 90px;
+    }
+
+    /*Inicio del diseño de la Seccion 1*/
+    .info{
+        width: 400px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .info img{
+        height: 250px;
+    }
+    
+    .info h1{
+        font-size: 30px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .info p{
+        font-size: 16px;
+    }
+    /*Fin del diseño de la Seccion 1*/
+
+    /*Inicio del diseño de la Seccion 2*/
+    .form{
+        width: 460px;
+        padding-left: 80px;
+        margin-bottom: 20px;
+    }
+
+    .form h1{
+        font-size: 30px;
+    }
+
+    .form p{
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .form .sector-1 input{
+        width: 350px;
+        font-size: 25px;
+    }
+
+    .form .select-category select{
+        width: 420px;
+        padding: 27px 30px;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .icon-select{
+        transform: translate(-400%, -120%)
+    }
+
+    .icon-select img{
+        height: 60px;
+    }
+
+    .sector-1 p{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .botones{
+        transform: translateX(20%);
+    }
+    /*Fin del diseño de la Seccion 2*/
+}
+/*FIN DEL RESPONSIVE 768PX*/
+
+
 /*RESPONSIVE 480PX*/
 @media(max-width: 480px){
     .container{
@@ -52,7 +181,7 @@
         margin-bottom: 30px;
     }
     
-    .form .inputs input{
+    .form .sector-1 input{
         padding: 15px 20px;
         width: 250px;
         font-size: 20px;
@@ -76,7 +205,7 @@
     }
     
 
-    .inputs p{
+    .sector-1 p{
         font-size: 18px;
         margin-bottom: 15px;
     }
@@ -90,16 +219,20 @@
         transform: translate(35%, 35%);
     }
 
+    .form{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
     .form label{
         font-size: 18px;
     }
 
-    .inputs .opciones{
+    .sector-1 .opciones{
         margin-bottom: 0;
     }
 
     .botones{
-
         transform: translateX(-20%);
     }
     
@@ -108,25 +241,30 @@
         height: 60px;
         padding: 0 40px;
     }
+
+    .botones button h2{
+        font-size: 27px;
+    }
     
     .botones img{
         width: 30px;
     }
-    
-    .botones .button-izq{
-        margin-bottom: 20px;
-    }
 
-    .form .botones .button-izq p{
-        transform: translate(50%, -100%);
+    .form .botones .button-izq h2{
+        transform: translate(20%, -145%);
     }
 
     .botones .button-izq img{
-        transform: translate(-120%, 50%);
+        transform: translate(-110%, 50%);
     }
 
+    .form .botones .button-der h2{
+        transform: translate(-40%, -30%);
+    }
 
-
+    .botones .button-der img{
+        transform: translate(100%, -195%);
+    }
     /*Fin del diseño de la Seccion 2*/
 }
 /*FIN DEL RESPONSIVE 480PX*/
@@ -186,15 +324,15 @@
         margin-bottom: 30px;
     }
     
-    .form .inputs input{
-        padding: 10px 20px;
-        width: 150px;
+    .form .sector-1 input{
+        padding: 15px 20px;
+        width: 160px;
         font-size: 18px;
     }
     
-    .form .select-category select{
-        width: 190px;
-        padding: 13px 20px;
+    .sector-1 .select-category select{
+        width: 200px;
+        padding: 18px 20px;
         font-size: 18px;
         margin-bottom: 10px;
     }
@@ -203,18 +341,18 @@
         position: absolute;
         pointer-events: none;
         right: 10px;
-        transform: translate(-220%, -135%)
+        transform: translate(-220%, -150%)
     }
     
     .icon-select img{
         height: 30px;
     }
     
-    .inputs p{
+    .sector-1 p{
         font-size: 15px;
         margin-bottom: 15px;
+        margin-left: 10px;
     }
-
     
     .radio-button{
         width: 25px;
@@ -229,42 +367,33 @@
         font-size: 15px;
     }
 
-    .inputs .opciones{
+    .sector-1 .opciones{
         margin-bottom: 0;
     }
     
-    button{
-        margin-top: 0;
-        display: flex;
-        flex-direction: column;
-        width: 130px;
-        height: 60px;
+    .form .botones h2{
+        display: none;
     }
     
-    button img{
-        width: 30px;
+    .form .botones button img{
+        width: 40px;
     }
     
-    .form .button-izq{
-        margin-bottom: 20px;
-    }
-
-    .form .button-izq i{
-        transform: translate(20%,-85%);
-        font-style: normal;
+    .botones .button-izq{
+        padding-right: 15px;
+        margin-right: 10px;
     }
 
     .form .button-izq img{
-        transform: translate(-40%, 20%);
+        transform: translate(-30%, 15%);
     }
 
-    .form .button-der i{
-        transform: translate(-20%, 15%);
-        font-style: normal;
+    .botones .button-der{
+        padding-right: 15px;
     }
 
     .form .button-der img{
-        transform: translate(200%, -70%);
+        transform: translate(-20%, 15%);
     }
 
     /*Fin del diseño de la Seccion 2*/
